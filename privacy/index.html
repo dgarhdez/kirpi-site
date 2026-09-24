@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kirpi Privacy Policy</title>
-<meta name="description" content="Kirpi collects nothing. No accounts, no servers, no tracking.">
+<meta name="description" content="Kirpi has no accounts and no servers. Anonymous usage stats are off unless you turn them on.">
 <link rel="icon" href="../assets/icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -14,33 +14,39 @@
   <h1>Privacy Policy</h1>
   <p class="updated">Last updated: 24 September 2026</p>
 
-  <p>Kirpi shows data from your own PostHog account on your phone. The short version: <strong>Kirpi does not collect your data, and we have no servers.</strong></p>
-
-  <h2>What Kirpi does not do</h2>
-  <ul>
-    <li>There are no Kirpi accounts and no sign-in.</li>
-    <li>Kirpi does not collect, receive, store or sell personal data, analytics or usage data, or identifiers.</li>
-    <li>The app contains no advertising and no third-party tracking or analytics code.</li>
-  </ul>
+  <p>Kirpi shows data from your own PostHog account on your phone. The short version: <strong>Kirpi has no accounts and no servers, it never sees your PostHog data, and anonymous usage stats are off unless you turn them on.</strong></p>
 
   <h2>What stays on your phone</h2>
   <ul>
-    <li><strong>Your PostHog API key</strong> is stored in the iOS Keychain on your device. It is sent only to PostHog, never to us.</li>
-    <li><strong>Your settings</strong> (the projects you added, event names, pinned events, chart style and filters) are stored on your device only.</li>
+    <li><strong>Your PostHog API key</strong> is stored in the iOS Keychain on your device. It is sent only to PostHog, never to me.</li>
+    <li><strong>Your settings</strong> (the projects you added, event names you set, pinned events, chart style and filters) are stored on your device only.</li>
     <li><strong>The trial start date</strong> is stored in the device Keychain so that reinstalling does not restart the trial.</li>
   </ul>
 
   <h2>Who the app talks to</h2>
   <ul>
-    <li><strong>PostHog.</strong> When you connect a project, the app sends requests directly from your phone to PostHog's API (<code>us.posthog.com</code>, <code>eu.posthog.com</code> or a host you enter), using your key, to read your own analytics. Kirpi only reads. PostHog's own privacy policy governs what it does with those requests.</li>
-    <li><strong>Apple.</strong> The free trial and the one-time purchase are handled by the App Store. Apple's terms and privacy policy apply to payments.</li>
+    <li><strong>PostHog, for your data.</strong> When you connect a project, the app sends requests directly from your phone to PostHog's API (<code>us.posthog.com</code>, <code>eu.posthog.com</code> or a host you enter), using your key, to read your own analytics. Kirpi only reads. PostHog's own privacy policy governs what it does with those requests. I do not see any of it.</li>
+    <li><strong>Apple.</strong> The free trial and the one-time purchase are handled by the App Store. Apple's terms and privacy policy apply to payments. I never receive your payment details.</li>
+    <li><strong>PostHog, for anonymous usage stats, only if you say yes.</strong> See the next section.</li>
   </ul>
 
+  <h2>Anonymous usage stats (optional, off by default)</h2>
+  <p>The first time you open Kirpi it asks whether you want to share anonymous usage stats. If you say no, nothing is sent and no identifier is created. If you say yes, Kirpi sends a small number of anonymous events to the PostHog project I use to understand how the app is used. You can change your mind at any time in <strong>Settings, then Share anonymous usage stats</strong>; turning it off stops everything immediately.</p>
+  <p><strong>What is sent when it is on:</strong></p>
+  <ul>
+    <li>Which screens and buttons are used, for example that the chart was switched, that a range was chosen, that the unlock screen was shown, or that a purchase completed. Only from a fixed list of actions, never free text.</li>
+    <li>Whether a connection attempt worked, or failed and in what general way (for example a rejected key or no internet).</li>
+    <li>App opens and closes, the app version, your iOS version, phone model and language, and where you are in the free trial (for example "trial" or "unlocked").</li>
+    <li>A random anonymous ID generated on your device (and a random ID for each session), so that events from one install can be counted together. It is not linked to your name, your Apple ID, your PostHog account or any other identifier.</li>
+  </ul>
+  <p><strong>What is never sent:</strong> your PostHog data or numbers, your API key, your project names or IDs, your event or property names, any filter values, your name, email or contact details, your time zone, or your location (location lookup from the connection is switched off).</p>
+  <p>These stats are processed by PostHog on its EU cloud (<code>eu.posthog.com</code>) on my behalf. The project is set to discard IP addresses, so they are not stored with the events. The stats are used only to improve Kirpi, are not used for advertising, and are never sold or shared. Because they are anonymous, I cannot tell which events came from you; turning the switch off simply stops any new ones.</p>
+
   <h2>Your choices</h2>
-  <p>You can remove a project, and its stored key, at any time in Settings. Deleting the app removes all local data. Because we hold no data about you, there is nothing to request or delete from us.</p>
+  <p>You can turn usage stats on or off at any time in Settings. You can remove a project, and its stored key, at any time in Settings. Deleting the app removes all local data.</p>
 
   <h2>Children</h2>
-  <p>Kirpi is a tool for people who use PostHog and is not directed at children. It collects no information from anyone.</p>
+  <p>Kirpi is a tool for people who use PostHog and is not directed at children. Usage stats are off by default and contain no personal information.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="mailto:dgarhdez@gmail.com">dgarhdez@gmail.com</a>.</p>
