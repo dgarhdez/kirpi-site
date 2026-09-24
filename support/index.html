@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kirpi Support</title>
+<meta name="description" content="Help with Kirpi: connecting PostHog, API key scopes, the free trial and the one-time purchase.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header><a class="brand" href="../"><img src="../assets/icon.png" alt="">Kirpi</a></header>
+  <h1>Support</h1>
+  <p>Kirpi is made by one independent developer, and I read every message. Email <a href="mailto:dgarhdez@gmail.com">dgarhdez@gmail.com</a> and include your iPhone model, iOS version and what you were doing. Please never send your API key.</p>
+
+  <h2>Quick answers</h2>
+  <div class="card">
+    <details>
+      <summary>How do I get a PostHog API key?</summary>
+      <p>In PostHog, open Settings, then Personal API keys, then Create. Under access choose your project (or all access). Set exactly two scopes to <strong>Read</strong>: <strong>Query</strong> and <strong>Project</strong>. Leave everything else at No access. Copy the key when PostHog shows it (it is shown once), then paste it into Kirpi. The app's "How do I get a key?" screen walks through the same steps.</p>
+    </details>
+    <details>
+      <summary>It says the key is rejected or missing a permission.</summary>
+      <p>Check that you copied the personal key (it starts with <code>phx_</code>, not the <code>phc_</code> project token your app uses to send events) and that Query and Project are both set to Read. If your key belongs to the other cloud, Kirpi switches between US and EU for you.</p>
+    </details>
+    <details>
+      <summary>My numbers look empty or show "new".</summary>
+      <p>Try a longer range (7d, 30d or 90d). Percentages compare with the previous period, so a project younger than one period has nothing to compare against. Check Settings, Filters too: an exclusion rule can hide events.</p>
+    </details>
+    <details>
+      <summary>How does the free trial and purchase work?</summary>
+      <p>You get 7 days of everything. After that, one payment unlocks Kirpi for good. There is no subscription and nothing renews. Use <strong>Restore purchase</strong> on the unlock screen or in Settings if you reinstall or change device. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    </details>
+    <details>
+      <summary>Where is my data stored?</summary>
+      <p>Nowhere but your phone. Kirpi has no servers: it reads from PostHog directly and keeps your key in the iOS Keychain. See the <a href="../privacy/">Privacy Policy</a>. To remove a project and its key, swipe it in Settings, or delete the app.</p>
+    </details>
+    <details>
+      <summary>Can Kirpi change or delete things in PostHog?</summary>
+      <p>No. It only reads, and it only needs the two read scopes above.</p>
+    </details>
+  </div>
+
+  <footer>
+    <p><a href="../">Home</a> · <a href="../privacy/">Privacy</a></p>
+    <p>Kirpi is an independent app, not affiliated with, endorsed by or sponsored by PostHog Inc.</p>
+  </footer>
+</div>
+</body>
+</html>
